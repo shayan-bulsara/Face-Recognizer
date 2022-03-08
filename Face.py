@@ -45,7 +45,7 @@ def run(Folder, Arlam):
         for face_encoding in face_encodings:
             # See if the face is a match for the known face(s)
             matches = face_recognition.compare_faces(
-                known_face_encodings, face_encoding, 0.5)
+                known_face_encodings, face_encoding, 0.475)
             name = "Unknown"
 
             # # If a match was found in known_face_encodings, just use the first one.
